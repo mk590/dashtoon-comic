@@ -1,8 +1,8 @@
 {
   "name": "comic",
-  "homepage ":"http://mk590.github.io/dashtoon-comic",
+  "homepage ":"https://mk590.github.io/dashtoon-comic",
   "version": "0.1.0",
-  "private": true,
+  "private": false,
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
