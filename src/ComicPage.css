@@ -1,0 +1,61 @@
+/* ComicPage.css */
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0; /* Set your desired background color */
+  }
+  
+  .App {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  main {
+    text-align: center;
+  }
+  
+  form {
+    margin-bottom: 20px;
+  }
+  
+  textarea {
+    width: 80%; /* Adjust the width as needed */
+    height: 40px; /* Adjust the height as needed */
+    padding: 10px;
+    margin-bottom: 10px;
+  }
+  
+  button {
+    background-color: #4caf50; /* Set your desired button color */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  button:hover {
+    background-color: #45a049; /* Set your desired button hover color */
+  }
+  
+  div {
+    display: flex;
+    flex-wrap: wrap;
+    /* justify-content: space-around; */
+    /* margin: 0;  */
+    text-align: center;
+  }
+  
+  img {
+    border: 1px solid #ddd; /* Add a thin border */
+    border-radius: 4px;
+    width: 200px;
+    height: 300px;
+    object-fit: cover;
+  }
+  
+  /* Add more styles for the outer environment, borders, shadows, etc. */
+  
