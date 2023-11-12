@@ -7,9 +7,9 @@ body {
   }
   
   .App {
-    display: flex;
+    /* display: flex;  */
     justify-content: center;
-    align-items: center;
+    /* align-items: center; */
     height: 100vh;
   }
   
@@ -18,7 +18,7 @@ body {
   }
   
   form {
-    margin-bottom: 20px;
+    margin-bottom: 00px;
   }
   
   textarea {
@@ -41,7 +41,7 @@ body {
     background-color: #45a049; /* Set your desired button hover color */
   }
   
-  div {
+  .comicsection {
     display: flex;
     flex-wrap: wrap;
     /* justify-content: space-around; */

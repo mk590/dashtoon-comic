@@ -63,49 +63,28 @@ function App() {
       });
   };
 
-  const containerStyle = {
-    display: 'flex',
-    justifyContent: 'center',
-    alignItems: 'center',
-    height: '20vh', 
-  };
 
-  const centeredDivStyle = {
-    width: '300px', // Set your desired width
-    height: '200px', // Set your desired height
-    backgroundColor: 'lightgray',
-    textAlign: 'center',
-  };
   return (
     <div className="App">
-      <main>
-        <div style={containerStyle}>
-          <div style={centeredDivStyle}>
-            {msg}
-            <form onSubmit={handleFormSubmit}>
-              <div style={{ justifyContent: 'center', }}>
-                <textarea
-                  type="text"
-                  value={text}
-                  onChange={handleTextChange}
-                />
-              </div>
-              <button type="submit">Submit</button>
-            </form>
+      <>
+        <div style={{ marginLeft:'00vw', }}>
+
+          <div>
+          <form onSubmit={handleFormSubmit}>
+            <div style={{ justifyContent: 'center'}}>
+              <textarea
+                type="text"
+                value={text}
+                onChange={handleTextChange}
+              />
+            </div>
+            <button type="submit">Submit</button>
+          </form>
+         
+          <p> {msg}</p>
           </div>
         </div>
-        {/* {msg}
-        <form onSubmit={handleFormSubmit}>
-          <div style={{justifyContent: 'center',}}>
-            <textarea
-              type="text"
-              value={text}
-              onChange={handleTextChange}
-            />
-          </div>
-          <button type="submit">Submit</button>
-        </form> */}
-        <div style={{ justifyContent: 'center', }}>
+        <div class='comicsection' style={{ justifyContent: 'center', }}>
 
           {blobs ?
             <>
@@ -118,7 +97,7 @@ function App() {
 
             : <>No images</>}
         </div>
-      </main>
+      </>
     </div>
   );
 }
