@@ -1,5 +1,5 @@
 import './App.css';
-import './ComicPage.css'; 
+import './ComicPage.css';
 import React, { useState } from 'react';
 
 
@@ -67,7 +67,6 @@ function App() {
     display: 'flex',
     justifyContent: 'center',
     alignItems: 'center',
-    height: '100vh', // 100% of the viewport height
   };
 
   const centeredDivStyle = {
@@ -79,21 +78,21 @@ function App() {
   return (
     <div className="App">
       <main>
-      <div style={containerStyle}>
-      <div style={centeredDivStyle}>
-      {msg}
-      <form onSubmit={handleFormSubmit}>
-          <div style={{justifyContent: 'center',}}>
-            <textarea
-              type="text"
-              value={text}
-              onChange={handleTextChange}
-            />
+        <div style={containerStyle}>
+          <div style={centeredDivStyle}>
+            {msg}
+            <form onSubmit={handleFormSubmit}>
+              <div style={{ justifyContent: 'center', }}>
+                <textarea
+                  type="text"
+                  value={text}
+                  onChange={handleTextChange}
+                />
+              </div>
+              <button type="submit">Submit</button>
+            </form>
           </div>
-          <button type="submit">Submit</button>
-        </form>
-      </div>
-    </div>
+        </div>
         {/* {msg}
         <form onSubmit={handleFormSubmit}>
           <div style={{justifyContent: 'center',}}>
@@ -105,7 +104,7 @@ function App() {
           </div>
           <button type="submit">Submit</button>
         </form> */}
-        <div style={{justifyContent: 'center',}}>
+        <div style={{ justifyContent: 'center', }}>
 
           {blobs ?
             <>
