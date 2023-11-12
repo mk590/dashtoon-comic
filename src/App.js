@@ -62,7 +62,7 @@ function App() {
     <div className="App">
       <>
         <div style={{ marginTop:'10px', }}>
-
+        <p> {msg}</p>
           <div>
           <form onSubmit={handleFormSubmit}>
             <div style={{ justifyContent: 'center'}}>
@@ -75,7 +75,7 @@ function App() {
             <button type="submit">Submit</button>
           </form>
          
-          <p> {msg}</p>
+          {/* <p> {msg}</p> */}
           </div>
         </div>
         <div class='comicsection' style={{ justifyContent: 'center', }}>
