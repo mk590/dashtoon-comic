@@ -5,7 +5,6 @@ import React, { useState } from 'react';
 
 function App() {
   const [text, setText] = useState('');
-  const [isLoading, setIsLoading] = useState(false);
   const [blobs, setBlobs] = useState([]);
   const [msg, setMsg] = useState("Create Your Comic")
 
@@ -18,9 +17,7 @@ function App() {
   };
 
   async function query(data) {
-    setIsLoading(true);
     setMsg("Loading your comic");
-    console.log(JSON.stringify(data));
     try {
       const response = await fetch(
         "https://xdwvg9no7pefghrn.us-east-1.aws.endpoints.huggingface.cloud",
@@ -40,7 +37,6 @@ function App() {
       return result;
     } catch (error) {
       console.error("Error in query:", error);
-      setIsLoading(false);
       throw error;
     }
   }
@@ -53,10 +49,8 @@ function App() {
 
     query(obj)
       .then((res) => {
-        console.log(res);
         setMsg(`Comic created`)
         setBlobs((predata) => [...predata, res]);
-        isLoading(false);
       })
       .catch((error) => {
         console.error("Error in handleFormSubmit:", error);
