@@ -63,12 +63,26 @@ function App() {
       });
   };
 
+  const containerStyle = {
+    display: 'flex',
+    justifyContent: 'center',
+    alignItems: 'center',
+    height: '100vh', // 100% of the viewport height
+  };
 
+  const centeredDivStyle = {
+    width: '300px', // Set your desired width
+    height: '200px', // Set your desired height
+    backgroundColor: 'lightgray',
+    textAlign: 'center',
+  };
   return (
     <div className="App">
       <main>
-        {msg}
-        <form onSubmit={handleFormSubmit}>
+      <div style={containerStyle}>
+      <div style={centeredDivStyle}>
+      {msg}
+      <form onSubmit={handleFormSubmit}>
           <div style={{justifyContent: 'center',}}>
             <textarea
               type="text"
@@ -78,6 +92,19 @@ function App() {
           </div>
           <button type="submit">Submit</button>
         </form>
+      </div>
+    </div>
+        {/* {msg}
+        <form onSubmit={handleFormSubmit}>
+          <div style={{justifyContent: 'center',}}>
+            <textarea
+              type="text"
+              value={text}
+              onChange={handleTextChange}
+            />
+          </div>
+          <button type="submit">Submit</button>
+        </form> */}
         <div style={{justifyContent: 'center',}}>
 
           {blobs ?
