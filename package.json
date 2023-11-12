@@ -1,6 +1,6 @@
 {
   "name": "comic",
-  "homepage ":"https://mk590.github.io/dashtoon-comic",
+  "homepage":"https://mk590.github.io/dashtoon-comic",
   "version": "0.1.0",
   "private": false,
   "dependencies": {
