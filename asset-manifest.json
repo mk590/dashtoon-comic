@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/dashtoon-comic/static/css/main.45758804.css",
-    "main.js": "/dashtoon-comic/static/js/main.d789ad40.js",
+    "main.js": "/dashtoon-comic/static/js/main.ea2c3764.js",
     "static/js/787.2141ddf7.chunk.js": "/dashtoon-comic/static/js/787.2141ddf7.chunk.js",
     "index.html": "/dashtoon-comic/index.html",
     "main.45758804.css.map": "/dashtoon-comic/static/css/main.45758804.css.map",
-    "main.d789ad40.js.map": "/dashtoon-comic/static/js/main.d789ad40.js.map",
+    "main.ea2c3764.js.map": "/dashtoon-comic/static/js/main.ea2c3764.js.map",
     "787.2141ddf7.chunk.js.map": "/dashtoon-comic/static/js/787.2141ddf7.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.45758804.css",
-    "static/js/main.d789ad40.js"
+    "static/js/main.ea2c3764.js"
   ]
 }
